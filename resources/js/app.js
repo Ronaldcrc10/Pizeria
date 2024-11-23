@@ -22,4 +22,14 @@ const routes = [
       routes,
     });
 
+const routes = [
+  { path: '/pagos', component: Pagos },
+];
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+});
+
+
 createApp(App).use(router).mount('#app');
