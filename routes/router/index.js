@@ -1,13 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Pedidos from '../views/Pedidos.vue';
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
 
-const routes = [
-  { path: '/', component: Pedidos },
-];
+createApp(App).use(router).mount('#app');
 
-const router = createRouter({
-  history: createWebHistory(),
-  routes,
-});
 
 export default router;
